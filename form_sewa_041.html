@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Penyewaan | SewaMobil</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Form Penyewaan Mobil</h1>
+    <p>Lengkapi data berikut untuk mengajukan penyewaan.</p>
+  </header>
+  <nav class="navbar" aria-label="Navigasi utama">
+    <a href="index.html">Beranda</a>
+    <a href="katalog_041.html">Katalog Mobil</a>
+    <a href="form_sewa_041.html">Form Penyewaan</a>
+  </nav>
+  <main class="container">
+    <section class="form-panel">
+      <h2>Data Penyewa</h2>
+      <form id="rentalForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Contoh: aulia041" required minlength="3">
+          </div>
+          <div class="form-group">
+            <label for="mobil">Pilihan Mobil</label>
+            <select id="mobil" name="mobil" required>
+              <option value="">-- Pilih mobil --</option>
+              <option value="Toyota Avanza">Toyota Avanza</option>
+              <option value="Honda Brio">Honda Brio</option>
+              <option value="Toyota Innova">Toyota Innova</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lama">Lama Sewa (Hari)</label>
+          <input type="number" id="lama" name="lama" min="1" required>
+        </div>
+        <button type="submit">Kirim Penyewaan</button>
+        <p id="pesan" class="message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer><p>&copy; 2026 SewaMobil - Proyek Praktikum</p></footer>
+</body>
+</html>
